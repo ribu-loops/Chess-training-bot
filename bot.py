@@ -5,8 +5,9 @@ import chess
 import chess.svg
 import cairosvg
 import asyncio
-import os
 import io
+import os
+from aiohttp import web
 
 from puzzles import (
     start_puzzle, get_random_puzzle, check_move, active_puzzles,
@@ -394,9 +395,29 @@ async def setup_hook():
     from puzzles import init_db
     await init_db()
 
+async def handle_ping(request):
+    return web.Response(text="Oslo is awake!")
+
+_web_server_started = False
+
+async def start_web_server():
+    global _web_server_started
+    if _web_server_started:
+        return
+    _web_server_started = True
+
+    app = web.Application()
+    app.router.add_get("/", handle_ping)
+    runner = web.AppRunner(app)
+    await runner.setup()
+    port = int(os.environ.get("PORT", 10000))
+    site = web.TCPSite(runner, "0.0.0.0", port)
+    await site.start()
+    print(f"[Oslo] Web server running on port {port}")
 
 @bot.event
 async def on_ready():
+    await start_web_server()
     print("[Oslo] Logged in as " + str(bot.user) + " | Servers: " + str(len(bot.guilds)))
 
 

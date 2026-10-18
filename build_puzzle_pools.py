@@ -1,4 +1,3 @@
-# Copyright (c) 2026 Night Wing. All Rights Reserved.
 """
 build_puzzle_pools.py
 ─────────────────────

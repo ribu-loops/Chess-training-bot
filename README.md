@@ -213,14 +213,11 @@ These results directly informed what v2.0 needed: a proper scoring system to giv
 
 # 👤 Author
 
-Made with ♟️ and ☕ by **Night Wing**
-
-Oslo is a student-developed project built to solve a real problem in chess communities. v1 proved the concept worked. v2 is the production version — built with proper architecture, a real database, and the lessons learned from shipping something people actually used.
-
+Developed by **Ribu Loops** as an open-source, student-led chess training bot. v1 proved the concept worked. v2 is the production version — built with proper architecture, a real database, and the lessons learned from shipping something people actually used.
 ---
 
 # 📜 License
 
-Copyright (c) 2026 Night Wing. All Rights Reserved.
+This project is licensed under the [MIT License](LICENSE) — see the [LICENSE](LICENSE) file for details.
 
-This project is proprietary software. You may not copy, distribute, modify, or run this code without explicit written permission from the author.
+Copyright (c) 2026 Ribu Loops

@@ -1,4 +1,3 @@
-# Copyright (c) 2026 Night Wing. All Rights Reserved.
 import json
 import random
 import chess

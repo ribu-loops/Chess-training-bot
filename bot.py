@@ -1,4 +1,3 @@
-# Copyright (c) 2026 Night Wing. All Rights Reserved.
 import json
 import discord
 from discord.ext import commands
@@ -908,7 +907,7 @@ async def botstats(ctx):
         value = "`" + str(len(bot.guilds)) + "`",
         inline=True
     )
-    embed.set_footer(text="Oslo Chess Trainer \u2022 built by Night Wing")
+    embed.set_footer(text="Oslo Chess Trainer")
     await ctx.send(embed=embed)
 
 
@@ -960,7 +959,7 @@ async def guide(ctx):
         value = "`!notation` — learn chess notation",
         inline=False
     )
-    embed.set_footer(text="Oslo is a student-developed project • built with ♟️ and ☕ by Night Wing")
+    embed.set_footer(text="Oslo is a student-developed project • built with ♟️ and ☕")
     await ctx.send(embed=embed)
 
 
@@ -1004,15 +1003,13 @@ async def notation(ctx):
 async def creator(ctx):
     await ctx.send(
         "\U0001f338 I am **Oslo**, your cozy Discord chess trainer.\n"
-        "Created with \u265f\ufe0f and \u2615 by **Night Wing** for passionate chess players.\n"
-        "\u2615 Help keep Oslo running: https://ko-fi.com/devnightwing"
-    )
+        "Created with \u265f\ufe0f and \u2615 by **5** for passionate chess players.\n"
 
 
 # ── Run ───────────────────────────────────────────────────────────────────────
 
 # ─────────────────────────────────────────────────────────────────────────────
-# ADMIN COMMANDS  (Night Wing only)
+# ADMIN COMMANDS
 # ─────────────────────────────────────────────────────────────────────────────
 
 @bot.command()

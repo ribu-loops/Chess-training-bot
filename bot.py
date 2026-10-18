@@ -1004,7 +1004,7 @@ async def creator(ctx):
     await ctx.send(
         "\U0001f338 I am **Oslo**, your cozy Discord chess trainer.\n"
         "Created with \u265f\ufe0f and \u2615 by **5** for passionate chess players.\n"
-
+    )
 
 # ── Run ───────────────────────────────────────────────────────────────────────
 

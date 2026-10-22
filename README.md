@@ -214,6 +214,7 @@ These results directly informed what v2.0 needed: a proper scoring system to giv
 # 👤 Author
 
 Developed by **Ribu Loops** as an open-source, student-led chess training bot. v1 proved the concept worked. v2 is the production version — built with proper architecture, a real database, and the lessons learned from shipping something people actually used.
+
 ---
 
 # 📜 License
